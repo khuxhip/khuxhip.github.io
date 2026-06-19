@@ -274,6 +274,21 @@ hr.divider {
   font-size: 14px;
 }
 
+.footer-heading {
+  font-weight: 600;
+  color: var(--ink);
+  font-size: 15px;
+  margin: 0 0 6px;
+}
+
+.site-footer a {
+  color: var(--muted);
+}
+
+.site-footer a:hover {
+  color: var(--accent);
+}
+
 /* ============================================
    RESPONSIVE
    ============================================ */
