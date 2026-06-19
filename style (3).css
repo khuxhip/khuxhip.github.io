@@ -1,0 +1,285 @@
+/* ============================================
+   TOKENS — plain, neutral
+   ============================================ */
+:root {
+  --ink: #1f1f1f;
+  --text: #2d2d2d;
+  --muted: #6b6b6b;
+  --bg: #ffffff;
+  --line: #e3e3e3;
+  --accent: #3b5a6b;       /* quiet slate blue, used sparingly */
+  --accent-bg: #f3f6f7;
+
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --max-width: 760px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ============================================
+   NAV
+   ============================================ */
+.site-nav {
+  border-bottom: 1px solid var(--line);
+  padding: 22px 0;
+}
+
+.nav-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.nav-name {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: var(--text);
+  font-size: 15px;
+}
+
+.nav-links a.active {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ============================================
+   MAIN CONTENT
+   ============================================ */
+main {
+  padding: 56px 0 80px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 8px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 40px 0 12px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 4px;
+}
+
+p { margin: 0 0 16px; }
+
+.subtitle {
+  color: var(--muted);
+  font-size: 17px;
+  margin: 0 0 32px;
+}
+
+ul.plain {
+  margin: 0 0 16px;
+  padding-left: 20px;
+}
+
+ul.plain li { margin-bottom: 6px; }
+
+hr.divider {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 40px 0;
+}
+
+/* ============================================
+   HOME
+   ============================================ */
+.home-hero {
+  padding: 100px 0 110px;
+  text-align: center;
+}
+
+.home-hero h1 {
+  font-size: 34px;
+  margin-bottom: 14px;
+}
+
+.home-hero p {
+  color: var(--muted);
+  font-size: 18px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   PROJECTS INDEX
+   ============================================ */
+.project-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-row {
+  display: block;
+  padding: 22px 0;
+  border-top: 1px solid var(--line);
+  color: var(--text);
+}
+
+.project-list .project-row:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.project-row:hover {
+  background: var(--accent-bg);
+  text-decoration: none;
+}
+
+.project-row-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.project-row h3 {
+  margin: 0;
+}
+
+.project-row .project-row-date {
+  color: var(--muted);
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.project-row .project-row-desc {
+  color: var(--muted);
+  font-size: 15px;
+  margin-top: 4px;
+}
+
+/* ============================================
+   PROJECT DETAIL PAGE
+   ============================================ */
+.project-meta {
+  color: var(--muted);
+  font-size: 15px;
+  margin-bottom: 28px;
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 32px;
+  background: #f1f1ef;
+  border: 1px solid var(--line);
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 28px;
+  font-size: 15px;
+}
+
+.project-nav-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  font-size: 15px;
+}
+
+/* ============================================
+   RESUME PAGE
+   ============================================ */
+.resume-embed {
+  width: 100%;
+  height: 80vh;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 18px;
+  border: 1px solid var(--ink);
+  border-radius: 5px;
+  color: var(--ink);
+  font-size: 15px;
+}
+
+.download-btn:hover {
+  background: var(--ink);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 28px 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 560px) {
+  .nav-links { gap: 16px; }
+  .home-hero { padding: 70px 0 80px; }
+  .project-row-inner { flex-direction: column; gap: 4px; }
+  .project-nav-footer { flex-direction: column; gap: 10px; }
+}
