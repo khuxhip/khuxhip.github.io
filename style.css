@@ -53,6 +53,13 @@ a:hover { text-decoration: underline; }
   gap: 12px;
 }
 
+.nav-avatar {
+  height: 44px;
+  width: auto;
+  display: block;
+  image-rendering: pixelated;
+}
+
 .nav-name {
   font-weight: 600;
   color: var(--ink);
