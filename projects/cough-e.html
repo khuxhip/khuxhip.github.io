@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cough-E — Khushi Patel</title>
+<title>Cough-E</title>
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -21,22 +21,35 @@
 
 <main>
   <div class="wrap">
-    <a href="../projects.html" class="back-link">← Back to Projects</a>
+    <a href="../projects.html" class="back-link">← Projects</a>
 
     <h1>Cough-E</h1>
     <p class="project-meta">August 2025 – December 2025</p>
 
     <div class="project-img">Add a photo of the build here</div>
 
-    <p>A six-bar linkage locomotion system synchronized with a geneva-driven dispenser, designed for precise positional payload delivery.</p>
+    <p>A WALL-E inspired walking robot that mechanically synchronizes locomotion and cough drop dispensing through a single motor, designed to provide accessible relief to students living in university dorms.</p>
 
-    <h2>What I did</h2>
-    <ul class="plain">
-      <li>Performed PVA (position-velocity-acceleration) analysis on the six-bar linkage to determine a stride length of 4.375 cm and derive the 300:1 compound gear ratio needed to synchronize the geneva-driven dispenser at 1 payload per 2 m</li>
-      <li>Evaluated Delrin vs. ¼" acrylic for linkage fabrication through physical testing; selected acrylic to reduce lateral instability</li>
-      <li>Laser cut and assembled the final linkage components</li>
+    <h2>Project Overview</h2>
+    <p>For ME 370: Mechancial Design I, my team designed and manufactured COUGH-E, a walking robot that dispenses individually wrapped cough drops as it moves. The concept was created as to support students during flu seasons, providing a sanitary and approachable way to access symptom relief.</p>
+    <p>Both walking and dispensing systems were powered by a single motor. A compound gear train connected the linkage-driven legs to a dispenser. This allows the robot's forward motion to mechanically control when each cough drop was released.</p>
+    
+    <h2>Design Goals</h2>
+    <p>COUGH-E was designed with the following requirements:</p>
+    <u1 class="plain">
+      <li>Walk without using powered wheels for locomotion.</li>
+      <li>Maintain a minimum forward speed of 4 m/min.</li>
+      <li>Dispense one individually wrapped cough drop approximately every 2 meters.</li>
+      <li>Keep the payload enclosed and avoid direct human contact.</li>
+      <li>Remain stable while walking and dispensing simultaneously.</li>
+      <li>Create a friendly appearance.</li>
     </ul>
 
+    <h2>Locomotion System</h2>
+    <p>The walking mechanism used a two six-bar linkage legs mounted at the front of the robot. Each leg converted the motor's rotating motion into a repetitive stepping path with a contact movement for propulsion and a lift movement for repositioning.</p>
+    <p>The original design moved the two legs 180 degrees out of phase. While this configuration did reach the required dspeed, it caused lateral movement and occasional mechanical instability. In the final design, the legs were synchronized to move in phase, and additional front support wheels was added to prevent the linkage from collapsing at its weakest position.</p>
+    <p>The final linkage had a theoretical stride length of approximately 4.375 cm with a speed of 4.35 m/min.</p>
+      
     <div class="project-nav-footer">
       <a href="rc-car.html">← RC Car</a>
       <a href="mattress-topper.html">Next: Mattress Topper →</a>
