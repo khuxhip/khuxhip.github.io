@@ -45,10 +45,14 @@
       <li>Create a friendly appearance.</li>
     </ul>
 
-    <h2>Locomotion System</h2>
-    <p>The walking mechanism used a two six-bar linkage legs mounted at the front of the robot. Each leg converted the motor's rotating motion into a repetitive stepping path with a contact movement for propulsion and a lift movement for repositioning.</p>
-    <p>The original design moved the two legs 180 degrees out of phase. While this configuration did reach the required dspeed, it caused lateral movement and occasional mechanical instability. In the final design, the legs were synchronized to move in phase, and additional front support wheels was added to prevent the linkage from collapsing at its weakest position.</p>
-    <p>The final linkage had a theoretical stride length of approximately 4.375 cm with a speed of 4.35 m/min.</p>
+    <h2>Design Process</h2>
+    <p>The initial dispenser used a horizontal revolver and slider-crank mechanism to open and close the release part. During prototyping, the slider consistently locked and the enclosed drum made refilling and maintenance more difficult.</p>
+    <p>The second design replaced the initial with a vertically oriented revolver. While it dispensed more reliably, the gear reduction was too large to fit within the available chassis space as due to size constraints.</p>
+    <p>Finally, we used a vertically stacked dispenser that released a cough drop every half-rotation, allowing to fit within the robot. However, the mechanism become more sensitive to differences in payload size and shape.</p>
+    <p>PVA analysis was used to evaluate the linkage's foot path, determining the contact phase and estimating the stride legnth. The calculated duty cycle was about 35%, meaning each leg remained in contact with the ground for about 126 degrees of a complete rotation. These results help connect the walking motion to the dispenser by estimating how many shaft rotations were required for the robot to travel 2 meters. Calculated gear ratios were used to determined the required reduction between the legs and disepnsing mechanism.</p>
+
+    <h2>Results</h2>
+
       
     <div class="project-nav-footer">
       <a href="rc-car.html">← RC Car</a>
