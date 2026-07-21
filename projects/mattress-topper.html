@@ -21,25 +21,52 @@
 
 <main>
   <div class="wrap">
-    <a href="../projects.html" class="back-link">← Back to Projects</a>
+    <a href="../projects.html" class="back-link">← Projects</a>
 
     <h1>Intelligent Mattress Topper</h1>
-    <p class="project-meta">October 2024 – August 2025 · Lead Engineer</p>
+    <p class="project-meta">October 2024 – August 2025</p>
 
     <div class="project-img">Add a photo of the build here</div>
 
-    <p>A smart pressure-relief mattress pad integrating pneumatic actuation, a 16-sensor pressure array, and embedded control to improve early pressure ulcer detection by 60%. I led design and prototyping on this project.</p>
+    <p>A sensor-integrated mattress pad designed to monitor pressure distribution and help caregivers identify areas at risk of developing pressure injuries.</p>
 
-    <h2>What I did</h2>
-    <ul class="plain">
-      <li>Designed and laid out embedded PCBs in KiCAD for microcontroller-driven air-valve actuation across 16 pressure zones; validated layout for signal integrity and low-profile form factor</li>
-      <li>Implemented and tested a real-time pressure heat map in C++ and Python, processing 16-sensor array data to visualize localized pressure distribution and time-rate changes</li>
-      <li>Coordinated pneumatic actuation system design alongside the sensor and control electronics</li>
-    </ul>
+    <h2>Project Overview</h2>
+    <p>Pressure injuries affect patients who remain in one position for extended periods and can lead to serious complications, longer hospital stays, and
+      increased demands on healthcare staff. Existing prevention methods often depend on caregivers manually repositioning patients at regular intervals,
+      which can be difficult to maintain in understaffed care environments. Our team developed a mattress pad that continuously measures
+      pressure across a patient’s body and converts the sensor data into an easy-to-read pressure map. The system is designed in mind to help caregivers
+      recognize high-pressure areas early and make more informed decisions about when a patient should be adjusted.</p>
 
+    <h2>Aim</h2>
+    <p>The goal of the project was to create a comfortable and noninvasive system that could continuously monitor pressure without disrupting the patient.
+      By presenting pressure data in a visual format, the system aimed to help caregivers identify prolonged pressure exposure, respond more quickly,
+      and reduce the likelihood of pressure ulcers.</p>
+
+    <h2>System Design</h2>
+    <p>The prototype consists of a flexible textile layer containing embedded pressure sensors placed beneath a medical-grade foam pad. An Arduino
+      microcontroller collects the readings from the sensor array, while a multiplexer and analog-to-digital conversion system allows multiple sensor
+      inputs to be processed. The collected data is then sent to a software interface that displays a color-coded pressure map. Areas experiencing greater pressure appear more
+      prominently, allowing users to quickly understand how weight is distributed across the surface of the mattress.</p>
+    
+    <h2>Design Process</h2>
+    <p>The project began by researching pressure injury formation, existing prevention methods, and the needs of patients and healthcare workers. This helped define the system requirements, including comfort,
+      continuous monitoring, sensor sensitivity, etc. We then developed and tested several prototypes. Due to the sensors being embedded within a soft surface, we had to balance
+      measurement accuracy with patient comfort and durability. Testing required us to examine sensor placement, wiring, calibration, and how the foam layers affected the pressure readings.
+      As the project progressed, we narrowed down our goal from creating a fully automated pressure-relief system to first developing a reliable platform. This allowed us to focus on building a strong
+      foundation that future teams could expand into an active intervention system.</p>
+    
+    <h2>Results</h2>
+    <p>The final prototype successfully detected and quantified differences in pressure across the mattress pad and displayed the readings through a
+      real-time visual pressure map. This demonstrated the system’s ability to identify concentrated pressure areas and monitor how pressure distribution
+      changed over time. Although automated patient repositioning could not be achieved at the time of development due to deadlines, the project established 
+      the sensing, data collection, and visualization foundation needed for a future adaptive pressure-relief system. The project was presented at the 2025 
+      Engineering Open House under American Society of Mechanical Engineers (ASME), MediMech, & Carle Institute of Health, where it received second place 
+      in the Most Industry Impact category presented by Chevron. This project is now in further developments under a different team, who recently won first
+      place at the 2026 Engineering Open House for Most Industry Impact, and was presented at COZAD at UIUC.</p>
+    
     <div class="project-nav-footer">
       <a href="cough-e.html">← Cough-E</a>
-      <a href="canopy-nest.html">Next: Canopy Nest →</a>
+      <a href="canopy-nest.html">Canopy Nest →</a>
     </div>
   </div>
 </main>
