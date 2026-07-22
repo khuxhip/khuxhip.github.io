@@ -1,19 +1,28 @@
-/* ============================================
-   TOKENS — plain, neutral
-   ============================================ */
+/* colors! */
 :root {
-  --ink: #1f1f1f;
-  --text: #2d2d2d;
-  --muted: #6b6b6b;
-  --bg: #ffffff;
-  --line: #e3e3e3;
-  --accent: #3b5a6b;       /* quiet slate blue, used sparingly */
-  --accent-bg: #f3f6f7;
+  --ink: #332b31;
+  --text: #4a4047;
+  --muted: #7b6e76;
 
-  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --bg: #fffafd;
+  --surface: #ffffff;
+  --line: #ecdfe7;
+
+  --accent: #b65f8c;
+  --accent-dark: #8f426b;
+  --accent-bg: #faeaf2;
+
+  --lavender: #eee8fa;
+  --peach: #fff0e8;
+
+  --shadow: 0 10px 28px rgba(92, 55, 76, 0.08);
+  --shadow-hover: 0 16px 36px rgba(92, 55, 76, 0.13);
+
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+
   --max-width: 760px;
 }
-
 * { box-sizing: border-box; }
 
 body {
@@ -34,9 +43,7 @@ a:hover { text-decoration: underline; }
   padding: 0 24px;
 }
 
-/* ============================================
-   NAV
-   ============================================ */
+/*navigation*/
 .site-nav {
   border-bottom: 1px solid var(--line);
   padding: 22px 0;
@@ -80,9 +87,7 @@ a:hover { text-decoration: underline; }
   font-weight: 600;
 }
 
-/* ============================================
-   MAIN CONTENT
-   ============================================ */
+/* main pages */
 main {
   padding: 56px 0 80px;
 }
@@ -129,9 +134,7 @@ hr.divider {
   margin: 40px 0;
 }
 
-/* ============================================
-   HOME
-   ============================================ */
+/* home page */
 .home-hero {
   padding: 100px 0 110px;
   text-align: center;
@@ -149,9 +152,7 @@ hr.divider {
   margin: 0 auto;
 }
 
-/* ============================================
-   PROJECTS INDEX
-   ============================================ */
+/* projects page */
 .project-list {
   display: flex;
   flex-direction: column;
@@ -199,9 +200,7 @@ hr.divider {
   margin-top: 4px;
 }
 
-/* ============================================
-   PROJECT DETAIL PAGE
-   ============================================ */
+/* project details - each page */
 .project-meta {
   color: var(--muted);
   font-size: 15px;
@@ -245,9 +244,7 @@ hr.divider {
   font-size: 15px;
 }
 
-/* ============================================
-   RESUME PAGE
-   ============================================ */
+/* resume page */
 .resume-embed {
   width: 100%;
   height: 80vh;
@@ -271,9 +268,7 @@ hr.divider {
   text-decoration: none;
 }
 
-/* ============================================
-   FOOTER
-   ============================================ */
+/* footer */
 .site-footer {
   border-top: 1px solid var(--line);
   padding: 28px 0;
@@ -296,12 +291,13 @@ hr.divider {
   color: var(--accent);
 }
 
-/* ============================================
-   RESPONSIVE
-   ============================================ */
+/* navigation */
 @media (max-width: 560px) {
   .nav-links { gap: 16px; }
   .home-hero { padding: 70px 0 80px; }
   .project-row-inner { flex-direction: column; gap: 4px; }
   .project-nav-footer { flex-direction: column; gap: 10px; }
 }
+
+/*fix ts*/
+
