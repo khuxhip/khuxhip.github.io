@@ -83,12 +83,6 @@ a:hover { text-decoration: underline; }
   display: block;
   image-rendering: pixelated;
   border-radius: 50%;
-  box-shadow: 0 5px 14px rgba(92, 55, 76, 0.13);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.nav-avatar:hover {
-  transform: rotate(-5deg) scale(1.06);
-  box-shadow: 0 8px 18px rgba(92, 55, 76, 0.17);
 }
 .nav-name {
   font-weight: 600;
