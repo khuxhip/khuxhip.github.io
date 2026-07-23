@@ -101,13 +101,13 @@ a:hover { text-decoration: underline; }
   font-size: 15px;
   padding: 7px 12px;
   border-radius: 999px;
-  transition: color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+  /*transition: color 0.2s ease, background 0.2s ease, transform 0.2s ease;*/
 }
 .nav-links a:hover {
   color: var(--accent);
   background: var(--accent-bg); 
   text-decoration: none;
-  transform: translateY(-1px);
+  transform: none;
 }
 .nav-links a.active {
   color: var(--accent);
