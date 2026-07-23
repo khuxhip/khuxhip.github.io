@@ -101,7 +101,7 @@ a:hover { text-decoration: underline; }
   font-size: 15px;
   padding: 7px 12px;
   border-radius: 999px;
-  /*transition: color 0.2s ease, background 0.2s ease, transform 0.2s ease;*/
+  transition: none;
 }
 .nav-links a:hover {
   color: var(--accent);
